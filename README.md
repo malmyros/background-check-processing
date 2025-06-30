@@ -4,6 +4,9 @@ An example of a Spring boot service for conducting background checks with Tempor
 The service demonstrates how to leverage Activities for splitting steps of the
 background check processing workflow and managing them resiliently.
 
+The service is inspired from the documentation of Temporal `Build a Background Check application`
+https://learn.temporal.io/tutorials/java/background-check/
+
 ## Install Temporal locally
 
 Before we can start running the demo, we would need to install Temporal.
