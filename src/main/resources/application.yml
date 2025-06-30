@@ -1,1 +1,14 @@
-spring.application.name=background-check-processing
+spring:
+  application:
+    name: demo
+  temporal:
+    namespace: default
+    connection:
+      target: 127.0.0.1:7233
+    workers:
+      - name: background-check-worker
+        task-queue: background_check
+    workersAutoDiscovery:
+      packages:
+        - com.example.backgroundcheckprocessing.workflows
+        - com.example.backgroundcheckprocessing.activities
